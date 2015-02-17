@@ -36,6 +36,7 @@ marker.setMap(map);
 google.maps.event.addDomListener(window, 'load', initialize);
 
 </script>
+<script>(function() { var s = document.createElement("script");s.async = true;s.onload = s.onreadystatechange = function(){getYelpWidget("wongs-wok-saint-louis-2","100%","RED","y","y","0");};s.src='http://chrisawren.com/widgets/yelp/yelpv2.js' ;var x = document.getElementsByTagName('script')[0];x.parentNode.insertBefore(s, x);})();</script>
   </head>
   <body>
     <div class = "container">
@@ -237,7 +238,7 @@ google.maps.event.addDomListener(window, 'load', initialize);
 
       <div class="row" id = "contact">
         <h2>Contact Us</h2>
-        <div class="col-md-6">
+        <div class="col-md-4">
           
           <div class="caption">
             
@@ -262,10 +263,15 @@ google.maps.event.addDomListener(window, 'load', initialize);
           <div>Saturday:  11pm - 9pm</div>
           <div>Sunday:    Closed</div>
         </div>
+        <div class = "col-md-2">
+          <h3>Yelp</h3>
+        <div id='yelpwidget'></div>
+      </div>
 
         
         
       </div>
+
 
 
     </div>
