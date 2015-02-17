@@ -1,0 +1,13 @@
+/*custom styles*/
+.price{
+	float: right;
+	font-weight: normal;
+}
+
+.map{
+	min-width:250px;
+	min-height:300px;
+	width: 90%;
+	height: 90%;
+	margin-bottom: 50px;
+}
