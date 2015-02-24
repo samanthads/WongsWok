@@ -40,7 +40,7 @@ google.maps.event.addDomListener(window, 'load', initialize);
 </script>
 <script>(function() { var s = document.createElement("script");s.async = true;s.onload = s.onreadystatechange = function(){getYelpWidget("wongs-wok-saint-louis-2","300","RED","y","y","1");};s.src='http://chrisawren.com/widgets/yelp/yelpv2.js' ;var x = document.getElementsByTagName('script')[0];x.parentNode.insertBefore(s, x);})();</script>
   </head>
-  <body>
+  <body data-spy="scroll" data-target=".navbar">
     <div class = "container">
       <nav class="navbar navbar-default navbar-fixed-top">
         <div class="container-fluid">
@@ -58,8 +58,8 @@ google.maps.event.addDomListener(window, 'load', initialize);
 
           <!-- Collect the nav links, forms, and other content for toggling -->
           <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-            <ul class="nav navbar-nav">
-              <li class="active"> <a href="#">Home <span class="sr-only">(current)</span></a></li>
+            <ul class="nav navbar-nav nav-tabs" role="tablist">
+              <li class="active"> <a href="#jumbo">Home <span class="sr-only">(current)</span></a></li>
               <li><a href="#menu">Menu</a></li>
               <li>
                 <a href="#about">About Us</a>
@@ -89,7 +89,7 @@ google.maps.event.addDomListener(window, 'load', initialize);
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
         <h4 class="modal-title" id="myModalLabel">Online Order Form</h4>
-        Order any one of our fantastic dishes online! Or give is a call at (314) 726-0976.
+        Order any one of our fantastic dishes online for carry out! Or give is a call at (314)-726-0976.
       </div>
       <div class="modal-body">
         <div class="input-group">
@@ -378,6 +378,11 @@ google.maps.event.addDomListener(window, 'load', initialize);
       </div>
 
       <div class = "row" id="about">
+        <div class="row">
+  <div class="col-md-12">
+      <img src="http://placehold.it/1168x350" alt="...">
+  </div>
+</div>
         <h2>About Us</h2>
         <p>
           Located on Melville just south of the Delmar Loop, Wong's Wok is a staple in the area for students and locals alike. With a 4-star rating on Yelp and 92% rating on Urbanspoon, Wong's Wok is a popular, inexpensive Chinese restaurant. Those who enjoy authentic Chinese food, as well as Americanized alternatives, will appreciate Wong's Wok's tasty dishes. Come dine in or take out! We're also more than happy to deliver! Enjoy our delicious food in our restaurant or at home.
