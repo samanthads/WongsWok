@@ -1,176 +1,240 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Wong's Wok</title>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Wong's Wok</title>
 
-    <!-- Bootstrap -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <!--Custom-->
-    <link href="css/custom.css" rel="stylesheet">
+  <!-- Bootstrap -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <!--Custom-->
+  <link href="css/custom.css" rel="stylesheet">
 
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
-    <!-- AIzaSyDngYgn5RG93hBcTZs6ZJrI8wxoYft4sxc -->
-<script src="http://maps.googleapis.com/maps/api/js"></script>
-<script>
-function initialize() {
-  var mapProp = {
-    center:new google.maps.LatLng(38.655495,-90.305494),
-    zoom:15,
-    mapTypeId:google.maps.MapTypeId.ROADMAP
-  };
-  var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
- var marker=new google.maps.Marker({
-  position:new google.maps.LatLng(38.655495,-90.305494),
-  });
+      <![endif]-->
+      <!-- AIzaSyDngYgn5RG93hBcTZs6ZJrI8wxoYft4sxc -->
+      <script src="http://maps.googleapis.com/maps/api/js"></script>
+      <script>
+      function initialize() {
+        var mapProp = {
+          center:new google.maps.LatLng(38.655495,-90.305494),
+          zoom:15,
+          mapTypeId:google.maps.MapTypeId.ROADMAP
+        };
+        var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+        var marker=new google.maps.Marker({
+          position:new google.maps.LatLng(38.655495,-90.305494),
+        });
 
-marker.setMap(map);
-}
-google.maps.event.addDomListener(window, 'load', initialize);
+        marker.setMap(map);
+      }
+      google.maps.event.addDomListener(window, 'load', initialize);
 
 
 
-</script>
-<script>(function() { var s = document.createElement("script");s.async = true;s.onload = s.onreadystatechange = function(){getYelpWidget("wongs-wok-saint-louis-2","300","RED","y","y","1");};s.src='http://chrisawren.com/widgets/yelp/yelpv2.js' ;var x = document.getElementsByTagName('script')[0];x.parentNode.insertBefore(s, x);})();</script>
-  </head>
-  <body data-spy="scroll" data-target=".navbar">
-    <div class = "container">
-      <nav class="navbar navbar-default navbar-fixed-top">
-        <div class="container-fluid">
-          <!-- Brand and toggle get grouped for better mobile display -->
-          <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
+      </script>
+      <script>(function() { var s = document.createElement("script");s.async = true;s.onload = s.onreadystatechange = function(){getYelpWidget("wongs-wok-saint-louis-2","300","RED","y","y","1");};s.src='http://chrisawren.com/widgets/yelp/yelpv2.js' ;var x = document.getElementsByTagName('script')[0];x.parentNode.insertBefore(s, x);})();</script>
+    </head>
+    <body data-spy="scroll" data-target=".navbar">
+      <div class = "container">
+        <nav class="navbar navbar-default navbar-fixed-top">
+          <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
 
-            </button>
-            <a class="navbar-brand" href="#jumbo">Wong's Wok</a>
-          </div>
+              </button>
+              <a class="navbar-brand" href="#jumbo">Wong's Wok</a>
+            </div>
 
-          <!-- Collect the nav links, forms, and other content for toggling -->
-          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-            <ul class="nav navbar-nav nav-tabs" role="tablist">
-              <li class="active"> <a href="#jumbo">Home <span class="sr-only">(current)</span></a></li>
-              <li><a href="#menu">Menu</a></li>
-              <li>
-                <a href="#about">About Us</a>
-              </li>
-              <li>
-                <a href="#contact">Contact Us</a>
-              </li>
-            </ul>
-            
-          </div><!-- /.navbar-collapse -->
-        </div><!-- /.container-fluid -->
-      </nav>
-      <div class = "row">
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+              <ul class="nav navbar-nav nav-tabs" role="tablist">
+                <li class="active"> <a href="#jumbo">Home <span class="sr-only">(current)</span></a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li>
+                  <a href="#about">About Us</a>
+                </li>
+                <li>
+                  <a href="#contact">Contact Us</a>
+                </li>
+              </ul>
+
+            </div><!-- /.navbar-collapse -->
+          </div><!-- /.container-fluid -->
+        </nav>
+        <div class = "row">
           <div class="jumbotron col-md-12" id= "jumbo">
 
             <h1 id = "header">Wong's Wok</h1>
             <p>
               Located on Melville Ave just off of the Delmar Loop, Wong's Wok "gives cheap Chinese food a good name" <a href= "http://www.stltoday.com/entertainment/dining/restaurants/reviews/wong-s-wok-gives-cheap-chinese-a-good-name/article_986c1758-8230-5be6-a813-7eab691a0f67.html">according to the St. Louis Post-Dispatch</a>. An inexpensive alternative, at Wong's Wok you'll find many WashU students and St. Louis area natives dining in and carrying out. We love to serve our customers our many delicious dishes!
             </p>
-<!-- Button trigger modal -->
-<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
-  Order Online
-</button>
-<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="myModalLabel">Online Order Form</h4>
-        Order any one of our fantastic dishes online for carry out! Or give is a call at (314)-726-0976.
-      </div>
-      <div class="modal-body">
-        <div class="input-group">
-          <h4>Name</h4>
+            <!-- Button trigger modal -->
+            <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+              Order Online
+            </button>
+            <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel">Online Order Form</h4>
+                    Order any one of our fantastic dishes online for carry out! Or give is a call at (314)-726-0976 if you're ordering more than 5 items.
+                  </div>
+                  <div class="modal-body">
+                    <div class="input-group">
+                      <h4>Name</h4>
 
-          <input type="text" class="form-control" placeholder="John Smith">
-        </div>
-        <div class="input-group">
-        <h4>Phone Number</h4>
+                      <input type="text" class="form-control" placeholder="John Smith">
+                    </div>
+                    <div class="input-group">
+                      <h4>Phone Number</h4>
 
-  <input type="text" class="form-control" placeholder="(314)-555-5555" aria-describedby="basic-addon1">
-</div>
-<div class="input-group">
-  <h4>Email Address</h4>
+                      <input type="text" class="form-control" placeholder="(314)-555-5555" aria-describedby="basic-addon1">
+                    </div>
+                    <div class="input-group">
+                      <h4>Email Address</h4>
 
-  <input type="text" class="form-control" placeholder="jsmith@example.com" aria-describedby="basic-addon1">
-</div>
-        <div class="input-group">
-          <h4>Order and Specifications</h4>
- 
-  <textarea class="form-control" id="message-text"></textarea>
-</div>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
-        <button type="button" class="btn btn-primary" data-dismiss="modal">Place Order Now!</button>
-      </div>
-    </div>
-  </div>
-</div>
+                      <input type="text" class="form-control" placeholder="jsmith@example.com" aria-describedby="basic-addon1">
+                    </div>
+                    <div class="input-group">
+                      <h4>Item 1</h4>
+                      <div class = "row">
+                        <div class = "col-md-8">
+                          <input type="text" class="form-control" placeholder="Item Name" aria-describedby="basic-addon1">
+                        </div>
+                        <div class = "col-md-4">
+                          <input type="number" class="form-control" placeholder="Quantity" aria-describedby="basic-addon1">
+                        </div>
+
+                      </div>
+                    </div>
+                    <div class="input-group">
+                      <h4>Item 2</h4>
+
+                      <div class = "row">
+                        <div class = "col-md-8">
+                          <input type="text" class="form-control" placeholder="Item Name" aria-describedby="basic-addon1">
+                        </div>
+                        <div class = "col-md-4">
+                          <input type="number" class="form-control" placeholder="Quantity" aria-describedby="basic-addon1">
+                        </div>
+                        
+                      </div>
+                    </div>
+                    <div class="input-group">
+                      <h4>Item 3</h4>
+
+                      <div class = "row">
+                        <div class = "col-md-8">
+                          <input type="text" class="form-control" placeholder="Item Name" aria-describedby="basic-addon1">
+                        </div>
+                        <div class = "col-md-4">
+                          <input type="number" class="form-control" placeholder="Quantity" aria-describedby="basic-addon1">
+                        </div>
+                        
+                      </div>
+                    </div>
+                    <div class="input-group">
+                      <h4>Item 4</h4>
+
+                      <div class = "row">
+                        <div class = "col-md-8">
+                          <input type="text" class="form-control" placeholder="Item Name" aria-describedby="basic-addon1">
+                        </div>
+                        <div class = "col-md-4">
+                          <input type="number" class="form-control" placeholder="Quantity" aria-describedby="basic-addon1">
+                        </div>
+                        
+                      </div>
+                    </div>
+                    <div class="input-group">
+                      <h4>Item 5</h4>
+
+                      <div class = "row">
+                        <div class = "col-md-8">
+                          <input type="text" class="form-control" placeholder="Item Name" aria-describedby="basic-addon1">
+                        </div>
+                        <div class = "col-md-4">
+                          <input type="number" class="form-control" placeholder="Quantity" aria-describedby="basic-addon1">
+                        </div>
+                        
+                      </div>
+                    </div>
+                    <div class="input-group">
+                      <h4>Specifications</h4>
+
+                      <textarea class="form-control" id="message-text"></textarea>
+                    </div>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">Place Order Now!</button>
+                  </div>
+                </div>
+              </div>
+            </div>
             
 
 
-          
-      </div>
-      </div>
-      <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-  <!-- Indicators -->
-  <ol class="carousel-indicators">
-    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-  </ol>
 
-  <!-- Wrapper for slides -->
-  <div class="carousel-inner" role="listbox">
-    <div class="item active">
-      <img src="wongswok.jpg" alt="...">
-    </div>
-    <div class="item">
-      <img src="food1.jpg" alt="...">
-      <div class="carousel-caption">
-        Beef Noodle Soup
-      </div>
-    </div>
-        <div class="item">
-      <img src="food2.jpg" alt="...">
-      <div class="carousel-caption">
-        Beef with Broccoli, White Rice, and Crab Rangoon
-      </div>
-    </div>
-    
-  </div>
+          </div>
+        </div>
+        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+          <!-- Indicators -->
+          <ol class="carousel-indicators">
+            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+          </ol>
 
-  <!-- Controls -->
-  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
-    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-    <span class="sr-only">Previous</span>
-  </a>
-  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-    <span class="sr-only">Next</span>
-  </a>
-</div>
+          <!-- Wrapper for slides -->
+          <div class="carousel-inner" role="listbox">
+            <div class="item active">
+              <img src="wongswok.jpg" alt="...">
+            </div>
+            <div class="item">
+              <img src="food1.jpg" alt="...">
+              <div class="carousel-caption">
+                Beef Noodle Soup
+              </div>
+            </div>
+            <div class="item">
+              <img src="food2.jpg" alt="...">
+              <div class="carousel-caption">
+                Beef with Broccoli, White Rice, and Crab Rangoon
+              </div>
+            </div>
 
-      <div class="row" id = "menu">
-        <div class="col-md-12">
+          </div>
+
+          <!-- Controls -->
+          <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+
+        <div class="row" id = "menu">
+          <div class="col-md-12">
             <div class="caption">
-                      <br>
-        <br>
-        <br>
+              <br>
+              <br>
+              <br>
               <h2>Menu</h2>
               <p>
                 <div class="row">
@@ -180,262 +244,305 @@ google.maps.event.addDomListener(window, 'load', initialize);
                         <div class="panel panel-default">
                           <!-- Default panel contents -->
                           <div class="panel-heading">Appetizers</div>
-                    <ul class="list-group">
-                      <li class="list-group-item">Mini Egg Rolls (4)<span class = "price">$2.50</span></li>
-                      <li class="list-group-item">Egg Roll<span class = "price">$1.25</span></li>
-                      <li class="list-group-item">Fried Wontons (6)<span class = "price">$2.50</span></li>
-                      <li class="list-group-item">Crab Rangoons (4)<span class = "price">$2.50</span></li>
-                      <li class="list-group-item">Pot Stickers (6)<span class = "price">$4.25</span></li>
-                    </ul>
-                  </div>
-                </div>
-                </div>
-                <div class = "row">
-                  <div class="col-md-12">
-                    <div class="panel panel-default">
-                    <div class="panel-heading">Chicken</div>
-                    <ul class="list-group">
-                      
-                      <li class="list-group-item">Sweet & Sour Chicken<span class = "price">$5.75 - $8.50</span></li>
-                      <li class="list-group-item">Chicken With Broccoli<span class = "price">$5.75 - $8.50</span></li>
-                      <li class="list-group-item">Moo Goo Gai Pan<span class = "price">$5.75 - $8.50</span></li>
-                      <li class="list-group-item">Chicken With Cashew Nuts<span class = "price">$5.75 - $8.50</span></li>
-                      <li class="list-group-item">Chicken W/ Mixed Vegetables<span class = "price">$5.75 - $8.50</span></li>
-                      <li class="list-group-item">Empress Chicken<span class = "price">$5.75 - $8.50</span></li>
-                      <li class="list-group-item">Hot Braised Chicken<span class = "price">$5.75 - $8.50</span></li>
-                      <li class="list-group-item">Kung Pao Chicken<span class = "price">$5.75 - $8.50</span></li>
-                      <li class="list-group-item">Chicken With Garlic Sauce<span class = "price">$5.75 - $8.50</span></li>
-                      <li class="list-group-item">Curry Chicken<span class = "price">$5.75 - $8.50</span></li>
-                      <li class="list-group-item">Hunan Chicken<span class = "price">$5.75 - $8.50</span></li>
-                      <li class="list-group-item">Szechuan Chicken<span class = "price">$5.75 - $8.50</span></li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
+                          <ul class="list-group">
+                            <li class="list-group-item">Mini Egg Rolls (4)<span class = "price">$2.50</span></li>
+                            <li class="list-group-item">Egg Roll<span class = "price">$1.25</span></li>
+                            <li class="list-group-item">Fried Wontons (6)<span class = "price">$2.50</span></li>
+                            <li class="list-group-item">Crab Rangoons (4)<span class = "price">$2.50</span></li>
+                            <li class="list-group-item">Pot Stickers (6)<span class = "price">$4.25</span></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div class = "row">
+                      <div class="col-md-12">
+                        <div class="panel panel-default">
+                          <div class="panel-heading">Chicken</div>
+                          <ul class="list-group">
 
-                <div class = "row">
-                    <div class="col-md-12">
-                      <div class="panel panel-default">
-                    <div class="panel-heading">Seafood</div>
-                    <ul class="list-group">
-                     
-                      <li class="list-group-item">Sweet & Sour Shrimp<span class = "price">$6.50 - $9.25</span></li>
-                      <li class="list-group-item">Shrimp With Snow Peas<span class = "price">$6.50 - $9.25</span></li>
-                      <li class="list-group-item">Shrimp Broccoli<span class = "price">$6.50 - $9.25</span></li>
-                      <li class="list-group-item">Shrimp W/ Mixed Vegetables<span class = "price">$6.50 - $9.25</span></li>
-                      <li class="list-group-item">Shrimp With Cashew Nuts<span class = "price">$6.50 - $9.25</span></li>
-                      <li class="list-group-item">Kung Pao Shrimp<span class = "price">$6.50 - $9.25</span></li>
-                      <li class="list-group-item">Shrimp With Garlic Sauce<span class = "price">$6.50 - $9.25</span></li>
-                      <li class="list-group-item">Hunan Shrimp<span class = "price">$6.50 - $9.25</span></li>
-                      <li class="list-group-item">Scallops With Broccoli<span class = "price">$10.50</span></li>
-                      <li class="list-group-item">Scallops With Mixed Vegetables<span class = "price">$10.50</span></li>
-                      <li class="list-group-item">Scallops With Garlic Sauce<span class = "price">$10.50</span></li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-              <div class="row">
-                  <div class="col-md-12">
-                    <div class="panel panel-default">
-                    <div class="panel-heading">Vegetables</div>
-                    <ul class="list-group">
-                      
-                      <li class="list-group-item">Stir-Fry Broccoli<span class = "price">$5.00 - $7.25</span></li>
-                      <li class="list-group-item">Vegetable Delight<span class = "price">$5.00 - $7.25</span></li>
-                      <li class="list-group-item">Broccoli With Garlic Sauce<span class = "price">$5.00 - $7.25</span></li>
-                      <li class="list-group-item">Bean Curd With Mixed Vegetables<span class = "price">$7.50</span></li>
-                      <li class="list-group-item">Bean Curd, Szechuan Style<span class = "price">$7.50</span></li>
-                      <li class="list-group-item">Dry Sautéed String Bean<span class = "price">$7.50</span></li>
-                      <li class="list-group-item">Egg Plant With Garlic Sauce<span class = "price">$7.50</span></li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-              <div class="row">
-                <div class = "col-md-12">
+                            <li class="list-group-item">Sweet & Sour Chicken<span class = "price">$5.75 - $8.50</span></li>
+                            <li class="list-group-item">Chicken With Broccoli<span class = "price">$5.75 - $8.50</span></li>
+                            <li class="list-group-item">Moo Goo Gai Pan<span class = "price">$5.75 - $8.50</span></li>
+                            <li class="list-group-item">Chicken With Cashew Nuts<span class = "price">$5.75 - $8.50</span></li>
+                            <li class="list-group-item">Chicken W/ Mixed Vegetables<span class = "price">$5.75 - $8.50</span></li>
+                            <li class="list-group-item">Empress Chicken<span class = "price">$5.75 - $8.50</span></li>
+                            <li class="list-group-item">Hot Braised Chicken<span class = "price">$5.75 - $8.50</span></li>
+                            <li class="list-group-item">Kung Pao Chicken<span class = "price">$5.75 - $8.50</span></li>
+                            <li class="list-group-item">Chicken With Garlic Sauce<span class = "price">$5.75 - $8.50</span></li>
+                            <li class="list-group-item">Curry Chicken<span class = "price">$5.75 - $8.50</span></li>
+                            <li class="list-group-item">Hunan Chicken<span class = "price">$5.75 - $8.50</span></li>
+                            <li class="list-group-item">Szechuan Chicken<span class = "price">$5.75 - $8.50</span></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
 
-                </div>
-              </div>
+                    <div class = "row">
+                      <div class="col-md-12">
+                        <div class="panel panel-default">
+                          <div class="panel-heading">Seafood</div>
+                          <ul class="list-group">
+
+                            <li class="list-group-item">Sweet & Sour Shrimp<span class = "price">$6.50 - $9.25</span></li>
+                            <li class="list-group-item">Shrimp With Snow Peas<span class = "price">$6.50 - $9.25</span></li>
+                            <li class="list-group-item">Shrimp Broccoli<span class = "price">$6.50 - $9.25</span></li>
+                            <li class="list-group-item">Shrimp W/ Mixed Vegetables<span class = "price">$6.50 - $9.25</span></li>
+                            <li class="list-group-item">Shrimp With Cashew Nuts<span class = "price">$6.50 - $9.25</span></li>
+                            <li class="list-group-item">Kung Pao Shrimp<span class = "price">$6.50 - $9.25</span></li>
+                            <li class="list-group-item">Shrimp With Garlic Sauce<span class = "price">$6.50 - $9.25</span></li>
+                            <li class="list-group-item">Hunan Shrimp<span class = "price">$6.50 - $9.25</span></li>
+                            <li class="list-group-item">Scallops With Broccoli<span class = "price">$10.50</span></li>
+                            <li class="list-group-item">Scallops With Mixed Vegetables<span class = "price">$10.50</span></li>
+                            <li class="list-group-item">Scallops With Garlic Sauce<span class = "price">$10.50</span></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-12">
+                        <div class="panel panel-default">
+                          <div class="panel-heading">Vegetables</div>
+                          <ul class="list-group">
+
+                            <li class="list-group-item">Stir-Fry Broccoli<span class = "price">$5.00 - $7.25</span></li>
+                            <li class="list-group-item">Vegetable Delight<span class = "price">$5.00 - $7.25</span></li>
+                            <li class="list-group-item">Broccoli With Garlic Sauce<span class = "price">$5.00 - $7.25</span></li>
+                            <li class="list-group-item">Bean Curd With Mixed Vegetables<span class = "price">$7.50</span></li>
+                            <li class="list-group-item">Bean Curd, Szechuan Style<span class = "price">$7.50</span></li>
+                            <li class="list-group-item">Dry Sautéed String Bean<span class = "price">$7.50</span></li>
+                            <li class="list-group-item">Egg Plant With Garlic Sauce<span class = "price">$7.50</span></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class = "col-md-12">
+
+                      </div>
+                    </div>
 
                   </div> <!--closes whole column-->
-                
+
                   <div class="col-md-6">
-                  <div class = "row">
-                    <div class="col-md-12">
-                      <div class="panel panel-default">
-                    <div class="panel-heading">Soup</div>
-                    <ul class="list-group">
-                      <li class="list-group-item">Egg Drop Soup<span class = "price">$1.25</span></li>
-                      <li class="list-group-item">Wonton Soup<span class = "price">$1.50</span></li>
-                      <li class="list-group-item">Hot & Sour Soup<span class = "price">$1.50</span></li>
-                      <li class="list-group-item">Hot Spicy Beef Noodle Soup<span class = "price">$7.00</span></li>
-                      <li class="list-group-item">Chinese Spaghetti<span class = "price">$6.75</span></li>
-                    </ul>
-                  </div>
-                  </div>
-                </div>
+                    <div class = "row">
+                      <div class="col-md-12">
+                        <div class="panel panel-default">
+                          <div class="panel-heading">Soup</div>
+                          <ul class="list-group">
+                            <li class="list-group-item">Egg Drop Soup<span class = "price">$1.25</span></li>
+                            <li class="list-group-item">Wonton Soup<span class = "price">$1.50</span></li>
+                            <li class="list-group-item">Hot & Sour Soup<span class = "price">$1.50</span></li>
+                            <li class="list-group-item">Hot Spicy Beef Noodle Soup<span class = "price">$7.00</span></li>
+                            <li class="list-group-item">Chinese Spaghetti<span class = "price">$6.75</span></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
                     <div class = "row">
                       <div class= "col-md-12">
                         <div class="panel panel-default">
-                    <div class="panel-heading">Beef</div>
-                    <ul class="list-group">
-                      
-                      <li class="list-group-item">Beef Pepper Steak<span class = "price">$6.50 - $9.25</span></li>
-                      <li class="list-group-item">Beef With Broccoli<span class = "price">$6.50 - $9.25</span></li>
-                      <li class="list-group-item">Beef With Snow Peas<span class = "price">$6.50 - $9.25</span></li>
-                      <li class="list-group-item">Mongolian Beef<span class = "price">$6.50 - $9.25</span></li>
-                      <li class="list-group-item">Beef W/ Mixed Vegetables<span class = "price">$6.50 - $9.25</span></li>
-                    
-                      <li class="list-group-item">Beef With Oyster Sauce<span class = "price">$6.50 - $9.25</span></li>
-                      <li class="list-group-item">Kung Pao Beef<span class = "price">$6.50 - $9.25</span></li>
-                      <li class="list-group-item">Beef With Garlic Sauce<span class = "price">$6.50 - $9.25</span></li>
-                      <li class="list-group-item">Hunan Beef<span class = "price">$6.50 - $9.25</span></li>
-                      <li class="list-group-item">Szechuan Beef<span class = "price">$6.50 - $9.25</span></li>
-                    </ul>
-                  </div>
-                </div>
-                </div>
-                  <div class = "row">
-                  <div class="col-md-12">
-                    <div class="panel panel-default">
-                    <div class="panel-heading">Pork</div>
-                    <ul class="list-group">
-                      
-                      <li class="list-group-item">Sweet & Sour Pork<span class = "price">$5.75 - $8.50</span></li>
-                      <li class="list-group-item">Pork With Broccoli<span class = "price">$5.75 - $8.50</span></li>
-                      <li class="list-group-item">Pork With Mixed Vegetable<span class = "price">$5.75 - $8.50</span></li>
-                      <li class="list-group-item">Hot Braised Pork<span class = "price">$5.75 - $8.50</span></li>
-                      <li class="list-group-item">Twice Pork<span class = "price">$5.75 - $8.50</span></li>
-                      <li class="list-group-item">Pork With Garlic Sauce<span class = "price">$5.75 - $8.50</span></li>
-                      <li class="list-group-item">Hunan Pork<span class = "price">$5.75 - $8.50</span></li>
-                      <li class="list-group-item">Szechuan Pork<span class = "price">$5.75 - $8.50</span></li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
+                          <div class="panel-heading">Beef</div>
+                          <ul class="list-group">
 
-                <div class="row">
-                  <div class="col-md-12">
-                    <div class="panel panel-default">
-                    <div class="panel-heading">Lo Mein</div>
-                    <ul class="list-group">
-                      
-                      <li class="list-group-item">Vegetable<span class = "price">$7.00</span></li>
-                      <li class="list-group-item">Chicken<span class = "price">$7.00</span></li>
-                      <li class="list-group-item">Pork<span class = "price">$7.00</span></li>
-                      <li class="list-group-item">Beef<span class = "price">$7.50</span></li>
-                      <li class="list-group-item">Shrimp<span class = "price">$7.50</span></li>
-                      <li class="list-group-item">Special<span class = "price">$8.25</span></li>
-                    </ul>
+                            <li class="list-group-item">Beef Pepper Steak<span class = "price">$6.50 - $9.25</span></li>
+                            <li class="list-group-item">Beef With Broccoli<span class = "price">$6.50 - $9.25</span></li>
+                            <li class="list-group-item">Beef With Snow Peas<span class = "price">$6.50 - $9.25</span></li>
+                            <li class="list-group-item">Mongolian Beef<span class = "price">$6.50 - $9.25</span></li>
+                            <li class="list-group-item">Beef W/ Mixed Vegetables<span class = "price">$6.50 - $9.25</span></li>
+
+                            <li class="list-group-item">Beef With Oyster Sauce<span class = "price">$6.50 - $9.25</span></li>
+                            <li class="list-group-item">Kung Pao Beef<span class = "price">$6.50 - $9.25</span></li>
+                            <li class="list-group-item">Beef With Garlic Sauce<span class = "price">$6.50 - $9.25</span></li>
+                            <li class="list-group-item">Hunan Beef<span class = "price">$6.50 - $9.25</span></li>
+                            <li class="list-group-item">Szechuan Beef<span class = "price">$6.50 - $9.25</span></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div class = "row">
+                      <div class="col-md-12">
+                        <div class="panel panel-default">
+                          <div class="panel-heading">Pork</div>
+                          <ul class="list-group">
+
+                            <li class="list-group-item">Sweet & Sour Pork<span class = "price">$5.75 - $8.50</span></li>
+                            <li class="list-group-item">Pork With Broccoli<span class = "price">$5.75 - $8.50</span></li>
+                            <li class="list-group-item">Pork With Mixed Vegetable<span class = "price">$5.75 - $8.50</span></li>
+                            <li class="list-group-item">Hot Braised Pork<span class = "price">$5.75 - $8.50</span></li>
+                            <li class="list-group-item">Twice Pork<span class = "price">$5.75 - $8.50</span></li>
+                            <li class="list-group-item">Pork With Garlic Sauce<span class = "price">$5.75 - $8.50</span></li>
+                            <li class="list-group-item">Hunan Pork<span class = "price">$5.75 - $8.50</span></li>
+                            <li class="list-group-item">Szechuan Pork<span class = "price">$5.75 - $8.50</span></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="row">
+                      <div class="col-md-12">
+                        <div class="panel panel-default">
+                          <div class="panel-heading">Lo Mein</div>
+                          <ul class="list-group">
+
+                            <li class="list-group-item">Vegetable<span class = "price">$7.00</span></li>
+                            <li class="list-group-item">Chicken<span class = "price">$7.00</span></li>
+                            <li class="list-group-item">Pork<span class = "price">$7.00</span></li>
+                            <li class="list-group-item">Beef<span class = "price">$7.50</span></li>
+                            <li class="list-group-item">Shrimp<span class = "price">$7.50</span></li>
+                            <li class="list-group-item">Special<span class = "price">$8.25</span></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div class = "row">
+                      <div class="col-md-12">
+                        <div class="panel panel-default">
+                          <div class="panel-heading">Fried Rice</div>
+                          <ul class="list-group">
+
+                            <li class="list-group-item">Vegetable<span class = "price">$3.00 - $4.50</span></li>
+                            <li class="list-group-item">Chicken<span class = "price">$3.75 - $5.25</span></li>
+                            <li class="list-group-item">Pork<span class = "price">$3.75 - $5.25</span></li>
+                            <li class="list-group-item">Ham<span class = "price">$3.75 - $5.25</span></li>
+                            <li class="list-group-item">Beef<span class = "price">$4.00 - $5.75</span></li>                      
+                            <li class="list-group-item">Shrimp<span class = "price">$4.00 - $5.75</span></li>
+                            <li class="list-group-item">Special<span class = "price">$4.25 - $6.25</span></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
                   </div>
-                </div>
-              </div>
+
+                </div><!--closes entire menu row-->
                 <div class = "row">
                   <div class="col-md-12">
                     <div class="panel panel-default">
-                    <div class="panel-heading">Fried Rice</div>
-                    <ul class="list-group">
-                      
-                      <li class="list-group-item">Vegetable<span class = "price">$3.00 - $4.50</span></li>
-                      <li class="list-group-item">Chicken<span class = "price">$3.75 - $5.25</span></li>
-                      <li class="list-group-item">Pork<span class = "price">$3.75 - $5.25</span></li>
-                      <li class="list-group-item">Ham<span class = "price">$3.75 - $5.25</span></li>
-                      <li class="list-group-item">Beef<span class = "price">$4.00 - $5.75</span></li>                      
-                      <li class="list-group-item">Shrimp<span class = "price">$4.00 - $5.75</span></li>
-                      <li class="list-group-item">Special<span class = "price">$4.25 - $6.25</span></li>
-                    </ul>
+                      <div class="panel-heading">Chef's Specialties</div>
+                      <ul class="list-group">
+
+                        <li class="list-group-item"><h5>Happy Family<span class = "price">$12.00</span></h5>Shrimp, Scallops, Beef And Chicken Sautéed With Baby Corn, Mushrooms, Snow Peas, Carrots, Water Chestnut, Broccoli In Special Sauce</li>
+                        <li class="list-group-item"><h5>Triple Delight<span class = "price">$11.50</span></h5>Shrimp, Chicken And Beef With Snow Peas, Baby Corn, Mushrooms, Carrot, Broccoli, Water Chestnuts</li>
+                        <li class="list-group-item"><h5>Kung Pao Triple<span class = "price">$11.50</span></h5>Beef, Scallops, Shrimp With Green Pepper, Onion, Carrot, Peanuts</li>
+                        <li class="list-group-item"><h5>Sizzling Beef & Scallops<span class = "price">$12.00</span></h5>Beef, Scallops With Baby Corn, Mushrooms, Carrot, Broccoli, Water Chestnuts In Chef's Special Sauce</li>
+                        <li class="list-group-item"><h5>Double Delight W/Mixed Vegetables<span class = "price">$12.00</span></h5>Shrimp, Scallops With Baby Corn, Mushrooms, Carrots, Broccoli, Water Chestnuts In Chef's Special Sauce</li>
+                        <li class="list-group-item"><h5>Pineapple Shrimp <span class = "price">$12.00</span></h5>Shrimp Sauteed With Pineapple</li>
+                        <li class="list-group-item"><h5>General Tso's Chicken <span class = "price">$12.00</span></h5>Chicken, Broccoli With Tingling Hot Sauce</li>
+                        <li class="list-group-item"><h5>Sesame Chicken <span class = "price">$12.00</span></h5>Chicken Sauteed With Broccoli In Special Sauce</li>
+                        <li class="list-group-item"><h5>Orange Chicken<span class = "price">$12.00</span></h5>Chicken Sauteed With Broccoli, Orange Peel In Special Sauce</li>
+                        <li class="list-group-item"><h5>Amazing Chicken<span class = "price">$12.00</span></h5>Sliced Chicken Sauteed With Snow Peas, Mushrooms, Water Chestnut In Special Sauce</li>
+                        <li class="list-group-item"><h5>Fish With Mixed Vegetable<span class = "price">$12.00</span></h5>Sliced Fish With Snow Peas, Mushroom, Water Chestnut And Broccoli</li>
+                        <li class="list-group-item"><h5>General Tso's Fish<span class = "price">$12.00</span></h5>Sliced Fish Sauteed With Broccoli</li>
+                      </ul>
+                    </div>
+
                   </div>
                 </div>
-                </div>
-              </div>
-              
-               </div><!--closes entire menu row-->
-                <div class = "row">
-                  <div class="col-md-12">
-                    <div class="panel panel-default">
-                    <div class="panel-heading">Chef's Specialties</div>
-                    <ul class="list-group">
-                      
-                      <li class="list-group-item"><h5>Happy Family<span class = "price">$12.00</span></h5>Shrimp, Scallops, Beef And Chicken Sautéed With Baby Corn, Mushrooms, Snow Peas, Carrots, Water Chestnut, Broccoli In Special Sauce</li>
-                      <li class="list-group-item"><h5>Triple Delight<span class = "price">$11.50</span></h5>Shrimp, Chicken And Beef With Snow Peas, Baby Corn, Mushrooms, Carrot, Broccoli, Water Chestnuts</li>
-                      <li class="list-group-item"><h5>Kung Pao Triple<span class = "price">$11.50</span></h5>Beef, Scallops, Shrimp With Green Pepper, Onion, Carrot, Peanuts</li>
-                      <li class="list-group-item"><h5>Sizzling Beef & Scallops<span class = "price">$12.00</span></h5>Beef, Scallops With Baby Corn, Mushrooms, Carrot, Broccoli, Water Chestnuts In Chef's Special Sauce</li>
-                      <li class="list-group-item"><h5>Double Delight W/Mixed Vegetables<span class = "price">$12.00</span></h5>Shrimp, Scallops With Baby Corn, Mushrooms, Carrots, Broccoli, Water Chestnuts In Chef's Special Sauce</li>
-                      <li class="list-group-item"><h5>Pineapple Shrimp <span class = "price">$12.00</span></h5>Shrimp Sauteed With Pineapple</li>
-                      <li class="list-group-item"><h5>General Tso's Chicken <span class = "price">$12.00</span></h5>Chicken, Broccoli With Tingling Hot Sauce</li>
-                      <li class="list-group-item"><h5>Sesame Chicken <span class = "price">$12.00</span></h5>Chicken Sauteed With Broccoli In Special Sauce</li>
-                      <li class="list-group-item"><h5>Orange Chicken<span class = "price">$12.00</span></h5>Chicken Sauteed With Broccoli, Orange Peel In Special Sauce</li>
-                      <li class="list-group-item"><h5>Amazing Chicken<span class = "price">$12.00</span></h5>Sliced Chicken Sauteed With Snow Peas, Mushrooms, Water Chestnut In Special Sauce</li>
-                      <li class="list-group-item"><h5>Fish With Mixed Vegetable<span class = "price">$12.00</span></h5>Sliced Fish With Snow Peas, Mushroom, Water Chestnut And Broccoli</li>
-                      <li class="list-group-item"><h5>General Tso's Fish<span class = "price">$12.00</span></h5>Sliced Fish Sauteed With Broccoli</li>
-                    </ul>
-                  </div>
-                
-              </div>
-              </div>
               </p>
-            
+
+            </div>
+          </div>
+
+        </div>
+
+        <div class = "row" id="about">
+          <br>
+          <br>
+          <br>
+          <h2>About Us</h2>
+          <p>
+            Located on Melville just south of the Delmar Loop, Wong's Wok is a staple in the area for students and locals alike. With a 4-star rating on Yelp and 92% rating on Urbanspoon, Wong's Wok is a popular, inexpensive Chinese restaurant. Those who enjoy authentic Chinese food, as well as Americanized alternatives, will appreciate Wong's Wok's tasty dishes. Come dine in or take out! We're also more than happy to deliver! Enjoy our delicious food in our restaurant or at home.
+          </p>
+        </div>
+        <div class="row" id = "contact">
+          <br>
+          <br>
+          <br>
+          <h2>Contact Us</h2>
+          <div class="col-md-6">
+
+            <div class="caption">
+
+              <div id="googleMap"  class = "map"></div>
+            </div>
+          </div>
+          <div class="col-md-3 col-xs-6">
+            <h3>Address</h3>
+            <div>565 Melville Ave</div>
+            <div>St. Louis, MO 63130</div>
+            <div>United States</div>
+            <h3>Phone Number</h3>
+            <div>(314) 726-0976</div>
+          </div>
+          <div class="col-md-3 col-xs-6">
+            <h3>Hours</h3>
+            <div>Monday:    11pm - 9pm</div>
+            <div>Tuesday:   11pm - 9pm</div>
+            <div>Wednesday: 11pm - 9pm</div>
+            <div>Thursday:  11pm - 9pm</div>
+            <div>Friday:    11pm - 9pm</div>
+            <div>Saturday:  11pm - 9pm</div>
+            <div>Sunday:    Closed</div>
           </div>
         </div>
-      
-      </div>
-
-      <div class = "row" id="about">
-        <br>
-        <br>
-        <br>
-        <h2>About Us</h2>
-        <p>
-          Located on Melville just south of the Delmar Loop, Wong's Wok is a staple in the area for students and locals alike. With a 4-star rating on Yelp and 92% rating on Urbanspoon, Wong's Wok is a popular, inexpensive Chinese restaurant. Those who enjoy authentic Chinese food, as well as Americanized alternatives, will appreciate Wong's Wok's tasty dishes. Come dine in or take out! We're also more than happy to deliver! Enjoy our delicious food in our restaurant or at home.
-        </p>
-      </div>
-      <div class="row" id = "contact">
-        <br>
-        <br>
-        <br>
-        <h2>Contact Us</h2>
-        <div class="col-md-4">
-          
-          <div class="caption">
-            
-            <div id="googleMap"  class = "map"></div>
+        <div class = "row">
+          <div class = "col-md-5 col-md-offset-2 col-xs-8">
+            <h3>Find Us On Yelp!</h3>
+            <div id='yelpwidget'></div>
           </div>
+          <div class = "col-md-5 col-xs-4">
+            <h3>Submit Feedback</h3>
+            <!-- Button trigger modal -->
+            <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal2">
+              Feedback
+            </button>
+
+            <!-- Modal -->
+            <div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel">Feedback Form</h4>
+                    Tell us what you think.
+                  </div>
+                  <div class="modal-body">
+                    <div class="input-group">
+                      <h4>Name</h4>
+
+                      <input type="text" class="form-control" placeholder="John Smith" aria-describedby="basic-addon1">
+                    </div>
+                    <div class="input-group">
+                      <h4>Email Address</h4>
+
+                      <input type="text" class="form-control" placeholder="jsmith@gmail.com" aria-describedby="basic-addon1">
+                    </div>
+                    <div class="input-group">
+                      <h4>Comments</h4>
+
+                      <textarea class="form-control" id="message-text"></textarea>
+                    </div>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Submit</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
         </div>
-        <div class="col-md-3 col-xs-6">
-          <h3>Address</h3>
-          <div>565 Melville Ave</div>
-          <div>St. Louis, MO 63130</div>
-          <div>United States</div>
-          <h3>Phone Number</h3>
-          <div>(314) 726-0976</div>
-        </div>
-        <div class="col-md-3 col-xs-6">
-          <h3>Hours</h3>
-          <div>Monday:    11pm - 9pm</div>
-          <div>Tuesday:   11pm - 9pm</div>
-          <div>Wednesday: 11pm - 9pm</div>
-          <div>Thursday:  11pm - 9pm</div>
-          <div>Friday:    11pm - 9pm</div>
-          <div>Saturday:  11pm - 9pm</div>
-          <div>Sunday:    Closed</div>
-        </div>
-        <div class = "col-md-2">
-          <h3>Find Us On Yelp!</h3>
-        <div id='yelpwidget'></div>
+
+
+
       </div>
 
-        
-        
-      </div>
 
-
-
-    </div>
-
-
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="js/bootstrap.min.js"></script>
-  </body>
-</html>
+      <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+      <!-- Include all compiled plugins (below), or include individual files as needed -->
+      <script src="js/bootstrap.min.js"></script>
+    </body>
+    </html>
